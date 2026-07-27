@@ -1,0 +1,60 @@
+version: "3.9"
+
+services:
+
+  mysql:
+    image: mysql:8.4
+    container_name: securevault-mysql
+
+    restart: always
+
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: securevault
+      MYSQL_USER: securevault
+      MYSQL_PASSWORD: securevault123
+
+    ports:
+      - "3307:3306"
+
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  backend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.backend
+
+    container_name: securevault-backend
+
+    depends_on:
+      - mysql
+
+    ports:
+      - "5000:5000"
+
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_NAME: securevault
+      DB_USER: securevault
+      DB_PASSWORD: securevault123
+
+    volumes:
+      - ../backend:/app
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.frontend
+
+    container_name: securevault-frontend
+
+    depends_on:
+      - backend
+
+    ports:
+      - "5173:80"
+
+volumes:
+  mysql-data:

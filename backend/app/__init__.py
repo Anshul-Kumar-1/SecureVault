@@ -13,6 +13,8 @@ def create_app():
     app.config.from_object(Config)
 
     CORS(app)
+    
+    
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(file_bp)

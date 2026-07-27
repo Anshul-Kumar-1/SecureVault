@@ -14,3 +14,5 @@ packaging==26.2
 pycparser==2.23
 python-dotenv==1.0.0
 Werkzeug==3.1.4
+PyJWT==2.10.1
+bcrypt==5.0.0
