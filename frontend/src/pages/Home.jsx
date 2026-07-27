@@ -2,7 +2,7 @@ import MainLayout from "../layouts/MainLayout";
 import Hero from "../components/landing/Hero";
 import TechStack from "../components/landing/TechStack";
 import Features from "../components/landing/Features";
-import Workflow from "../components/landing/Workflow";
+import Workflow from "../components/landing/WorkFlow";
 import EncryptionFlow from "../components/landing/EncryptionFlow";
 import FeatureShowcase from "../components/landing/FeatureShowcase";
 import Testimonials from "../components/landing/Testimonials";
