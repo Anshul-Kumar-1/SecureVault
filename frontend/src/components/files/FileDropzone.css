@@ -1,0 +1,138 @@
+.dropzone{
+
+    border:2px dashed #cbd5e1;
+
+    border-radius:16px;
+
+    padding:45px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    /* background:#e2dddd; */
+
+}
+
+.dropzone:hover{
+
+    border-color:#2563eb;
+
+   /* background: linear-gradient(
+180deg,
+#020617 0%,
+#0f172a 35%,
+#111827 70%,
+#1e293b 100%
+); */
+
+}
+
+.dragging{
+
+    border-color:#2563eb;
+
+    /* background:#eff6ff; */
+
+    transform:scale(1.05);
+
+}
+
+.dropzone-icon{
+
+    font-size:55px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.dropzone h3{
+
+    margin-bottom:10px;
+
+}
+
+.dropzone p{
+
+    color:#64748b;
+
+}
+
+.selected-file-card{
+
+    margin-top:20px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    /* background:#f8fafc; */
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.selected-file-card svg{
+
+    font-size:28px;
+
+    color:#2563eb;
+
+}
+.file-icon{
+
+    font-size:35px;
+
+    color:#2563eb;
+
+}
+
+.file-info{
+
+    flex:1;
+
+}
+
+.file-info h4{
+
+    margin:0;
+
+}
+
+.file-info span{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+.remove-file-btn{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    color:#ef4444;
+
+    transition:.3s;
+
+}
+
+.remove-file-btn:hover{
+
+    transform:scale(1.2);
+
+}

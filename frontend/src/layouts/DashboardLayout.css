@@ -1,0 +1,19 @@
+.dashboard-layout{
+
+    display:flex;
+
+}
+
+.dashboard-main{
+
+    margin-left:260px;
+
+    width:100%;
+
+    min-height:100vh;
+
+    padding:30px;
+
+    background:var(--background);
+
+}

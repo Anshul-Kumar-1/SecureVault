@@ -1,0 +1,18 @@
+.remember-me{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    color:var(--text);
+}
+
+.remember-me input{
+    width:16px;
+    height:16px;
+
+    cursor:pointer;
+}

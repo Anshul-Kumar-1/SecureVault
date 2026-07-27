@@ -1,0 +1,184 @@
+.upload-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:18px;
+
+    padding:60px;
+
+    border:2px dashed var(--border);
+
+    border-radius:24px;
+
+    background:var(--surface);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.upload-box.dragging{
+
+    border-color:var(--primary);
+
+    background:rgba(37,99,235,.08);
+
+    transform:scale(1.01);
+
+}
+
+.upload-icon{
+
+    font-size:70px;
+
+    color:var(--primary);
+
+}
+
+.upload-box h2{
+
+    font-size:28px;
+
+}
+
+.upload-box p{
+
+    color:var(--text-light);
+
+}
+
+.upload-box span{
+
+    color:var(--text-light);
+
+    font-size:14px;
+
+}
+
+.browse-btn{
+
+    border:none;
+
+    padding:14px 26px;
+
+    border-radius:12px;
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #7C3AED
+    );
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.browse-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+
+}
+.upload-actions{
+
+    margin-top:25px;
+
+}
+
+.upload-progress{
+
+    width:100%;
+
+    margin-top:20px;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:14px;
+
+    background:var(--border);
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    width:0;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        #2563EB,
+        #7C3AED
+    );
+
+    transition:width .25s linear;
+
+}
+
+.upload-progress p{
+
+    margin-top:12px;
+
+    text-align:center;
+
+    color:var(--text-light);
+
+    font-weight:600;
+
+}
+
+.encrypt-success{
+
+    margin-top:30px;
+
+    padding:24px;
+
+    text-align:center;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+}
+
+.encrypt-success h3{
+
+    color:#16a34a;
+
+    margin-bottom:10px;
+
+}
+
+.encrypt-success p{
+
+    margin-bottom:20px;
+
+    color:var(--text-light);
+
+}

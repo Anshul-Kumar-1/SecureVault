@@ -1,0 +1,144 @@
+.encrypt-page{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+}
+
+.encrypt-card{
+    width:100%;
+    max-width:750px;
+    background:var(--surface);
+    border-radius:24px;
+    padding:40px;
+    box-shadow:var(--shadow);
+}
+
+.encrypt-title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.encrypt-title svg{
+    font-size:48px;
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.encrypt-title h2{
+    margin-bottom:10px;
+}
+
+.encrypt-title p{
+    color:var(--text-light);
+}
+
+.upload-box{
+    border:2px dashed var(--border);
+    border-radius:20px;
+    padding:50px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.upload-box:hover{
+    border-color:var(--primary);
+    background:rgba(37,99,235,.05);
+}
+
+.upload-icon{
+    font-size:40px;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.selected-file{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-top:30px;
+    padding:20px;
+    border-radius:16px;
+    background:var(--background);
+}
+
+.selected-file svg{
+    font-size:32px;
+    color:var(--primary);
+}
+
+.algorithm-box{
+    margin-top:30px;
+    padding:20px;
+    border-radius:16px;
+    background:var(--background);
+}
+
+.encrypt-btn{
+    margin-top:30px;
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:16px;
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.encrypt-btn:hover:not(:disabled){
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(37,99,235,.25);
+}
+
+.encrypt-btn:disabled{
+    opacity:.6;
+    cursor:not-allowed;
+}
+
+@media(max-width:768px){
+
+    .encrypt-card{
+        padding:25px;
+    }
+
+    .upload-box{
+        padding:35px 20px;
+    }
+
+}
+.success-card{
+    margin-top:25px;
+    padding:20px;
+    border-radius:12px;
+    background:#f4fff4;
+    border:1px solid #27ae60;
+    text-align:center;
+}
+
+.success-card h3{
+    color:#27ae60;
+    margin-bottom:10px;
+}
+
+.success-card p{
+    margin-bottom:18px;
+    color:#555;
+    word-break:break-word;
+}
+
+.download-btn{
+    padding:12px 22px;
+    border:none;
+    border-radius:8px;
+    background:#27ae60;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.download-btn:hover{
+    background:#219150;
+}
