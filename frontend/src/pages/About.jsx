@@ -3,7 +3,7 @@ import DashboardHeader from "../components/dashboard/DashboardHeader";
 
 import AboutCard from "../components/about/AboutCard";
 import Features from "../components/landing/Features";
-import Workflow from "../components/landing/WorkFlow";
+import Workflow from "../components/landing/Workflow";
 import TechStack from "../components/landing/TechStack";
 import DeveloperCard from "../components/about/DeveloperCard";
 
